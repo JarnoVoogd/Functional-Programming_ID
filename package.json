@@ -1,0 +1,19 @@
+{
+  "name": "functional-programming_id",
+  "version": "1.0.0",
+  "description": "werk met dataset",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JarnoVoogd/Functional-Programming_ID.git"
+  },
+  "author": "Jarno Voogd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JarnoVoogd/Functional-Programming_ID/issues"
+  },
+  "homepage": "https://github.com/JarnoVoogd/Functional-Programming_ID#readme"
+}
