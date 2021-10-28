@@ -9,7 +9,6 @@ let favoDatumData = [];
 let correcteData = [];
 let somPerSoort = [];
 
-
 // For loop die elk array in het data.json bestand langs gaat
     // Specefiek zoekt naar 'favourite-pet' en die data in het huisdierData array zet
     // Het schoont de data op, het geeft elk woord een hoofdletter
@@ -43,6 +42,8 @@ function twoSpaces(string){
  }
  return string
 }
+
+
 
 
 

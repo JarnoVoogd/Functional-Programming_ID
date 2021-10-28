@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/JarnoVoogd/Functional-Programming_ID/issues"
   },
-  "homepage": "https://github.com/JarnoVoogd/Functional-Programming_ID#readme",
-  "dependencies": {
-    "roman-numerals-convert": "^1.0.3"
-  }
+  "homepage": "https://github.com/JarnoVoogd/Functional-Programming_ID#readme"
 }
