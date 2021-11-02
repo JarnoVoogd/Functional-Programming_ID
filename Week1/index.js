@@ -6,11 +6,16 @@ let huisdierData = [];
 let favoDatumData = [];
 let correcteData = [];
 let somPerSoort = [];
+let favoDatumText = [];
 
 // For loop that runs through every array in the  data.json file
 // The loop specifically looks for 'favourite-pet' and puts that data in the huisdierData array
 // It cleans up the data bij capitalizing each (first) word
 // Lastly it uses the function twoSpaces, more details in the annotations above twoSpaces
+//
+// The second thing i use this For-Loop for is running through the data.json file and selecting all the favourite dates
+// After selecting the data it will be pushed to a new empty array named favoDatumData
+// Lastly it will split all dates at the '/', this creates 3 strings, the day, the month and the year
 for (let i = 0; i < data.length; i++) {
   huisdierData.push(twoSpaces(data[i]["favourite-pet"]));
   huisdierData[i] =
@@ -23,6 +28,9 @@ for (let i = 0; i < data.length; i++) {
 
   favoDatumData.push(data[i]["favourite-date"]);
   favoDatumData[i] = favoDatumData[i].split("/");
+
+  favoDatumText.push(data[i]["favourite-date-in-text"]);
+  favoDatumText[i] 
 }
 
 // This function checks every string for spaces
@@ -142,3 +150,4 @@ console.log(huisdierData);
 console.log(somPerSoort);
 console.log(correcteData);
 console.log("Hoevaak komt elk romeinse cijfer voor?", aantalKeer);
+console.log(favoDatumText);

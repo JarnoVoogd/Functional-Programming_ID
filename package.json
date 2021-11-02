@@ -2,6 +2,7 @@
   "name": "functional-programming_id",
   "version": "1.0.0",
   "description": "werk met dataset",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "start"
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/JarnoVoogd/Functional-Programming_ID/issues"
   },
-  "homepage": "https://github.com/JarnoVoogd/Functional-Programming_ID#readme"
+  "homepage": "https://github.com/JarnoVoogd/Functional-Programming_ID#readme",
+  "dependencies": {
+    "node-fetch": "^3.0.0"
+  }
 }
