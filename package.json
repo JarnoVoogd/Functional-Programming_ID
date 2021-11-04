@@ -5,7 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "start"
+    "test": "start",
+    "start": "node --experimental-json-modules ./Week1/index2.js"
   },
   "repository": {
     "type": "git",
