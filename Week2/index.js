@@ -3,6 +3,7 @@ import fetch from "node-fetch";
 // Creating an array to push data to 
 let allFetches = [];
 let somPerSoort = [];
+let personenData = [];
 
 // This function fetches data from SWAPI and seperates the .json part
 function fetchPeople(id) {
