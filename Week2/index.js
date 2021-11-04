@@ -34,7 +34,7 @@ Promise.all(allFetches).then(allePersonen => {
   //   console.log(allePersonen);
 
   for (let i = 0; i < allePersonen.length; i++) {
-    personenData.push(allePersonen[i]["name"]);
+    personenData.push(allePersonen[i]["eye_color"]);
   }
   console.log(personenData);
 
