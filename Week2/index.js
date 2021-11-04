@@ -5,7 +5,7 @@ let array = [];
 
 // This function fetches data from SWAPI and seperates the .json part
 function fetchPeople(id) {
-  const url = `https://swapi.dev/api/people/${id}/}`;
+  const url = `https://swapi.dev/api/people/${id}/`;
   return fetch(url)
     .then(response => response.json())
     .then(data => data);
