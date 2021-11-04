@@ -1,7 +1,8 @@
 import fetch from "node-fetch";
 
 // Creating an array to push data to 
-let array = [];
+let allFetches = [];
+let somPerSoort = [];
 
 // This function fetches data from SWAPI and seperates the .json part
 function fetchPeople(id) {
@@ -25,3 +26,20 @@ for (let i = 0; endFetch < 5; i++) {
     }
   });
 }
+
+
+Promise.all(allFetches).then(allePersonen => {
+  //   console.log("alle data");
+  //   console.log(allePersonen);
+
+  for (let i = 0; i < allePersonen.length; i++) {
+    personenData.push(allePersonen[i]["name"]);
+  }
+  console.log(personenData);
+
+  personenData.forEach((i) => {
+    somPerSoort[i] = (somPerSoort[i] || 0) + 1;
+  });
+
+  console.log(somPerSoort);
+});
