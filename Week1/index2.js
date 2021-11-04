@@ -1,5 +1,5 @@
 // requiring data.json file
-const data = require("./data.json");
+import data from "./data.json";
 
 // Creating arrays to store the data in
 let huisdierData = [];
@@ -30,7 +30,7 @@ for (let i = 0; i < data.length; i++) {
   favoDatumData[i] = favoDatumData[i].split("/");
 
   favoDatumText.push(data[i]["favourite-date-in-text"]);
-  favoDatumText[i] 
+  favoDatumText[i];
 }
 
 // This function checks every string for spaces
@@ -47,17 +47,16 @@ function twoSpaces(string) {
 
 // This line of code runs through every string in huisdierData and adds up the amount of occurences per 'animal'
 // If a certain type of animal hasn't occured yet the amount of occurences stays 0, when that type of animal does occur it adds 1 to that category
-huisdierData.forEach(i => {
+huisdierData.forEach((i) => {
   somPerSoort[i] = (somPerSoort[i] || 0) + 1;
 });
 
 // This function runs through every array, containing a date, and converts the date from arabic to roman numerals
 // By using forEach this can be achieved with less code than if I were to use a For-Loop
-favoDatumData.forEach(datum => {
+favoDatumData.forEach((datum) => {
   datum[0] = convertToRoman(datum[0]);
   datum[1] = convertToRoman(datum[1]);
   datum[2] = convertToRoman(datum[2]);
-  favoDatumData.join("-");
 });
 
 // This For-Loop runs through all new, to roman converted, strings in the favoDatumData array
@@ -142,7 +141,7 @@ let aantalKeer = {
   C: datumString.replaceAll(/[^C]/g, "").length,
   X: datumString.replaceAll(/[^X]/g, "").length,
   V: datumString.replaceAll(/[^V]/g, "").length,
-  I: datumString.replaceAll(/[^I]/g, "").length
+  I: datumString.replaceAll(/[^I]/g, "").length,
 };
 
 // Here I console.log the results of my code
